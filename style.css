@@ -8,7 +8,18 @@
 *::after {
   box-sizing: border-box;
 }
+*{
+  max-width: 44rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+article{
+  line-height: 1.7rem;
+}
 
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
 /* Remove default margin */
 body,
 h1,
