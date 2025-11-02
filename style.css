@@ -34,8 +34,9 @@ header .container h1{
 grid-column: 1/ -1;
 }
 header .container h2{
-  grid-column: 1//4;
+  grid-column: 1/4;
   grid-row: 2/3;
+  padding-top: 0.8rem;
 }
 header .container p{
   grid-column: 1/2;
@@ -56,7 +57,7 @@ header h1{
   margin-bottom: 0.7rem;
 }
 header h2{
-  margin-top: 0.3rem;
+  margin-top: 0.1rem;
   margin-bottom: 0.2rem;
 }
 header p{
@@ -76,8 +77,9 @@ nav{
   margin-bottom: 1rem;
 }
 
+
 #about{
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 blockquote{
@@ -89,8 +91,8 @@ blockquote{
   padding-bottom: 0.7rem;
   border-left: #82dd82 solid 10px;
 }
-.container h2{
-  padding-top: 1.5rem;
+#main .container h2{
+  padding-top: 1.25rem;
 
 }
 
