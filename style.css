@@ -30,7 +30,7 @@ header .container{
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto auto;
 }
-.container h1{
+header .container h1{
 grid-column: 1/ -1;
 }
 header .container h2{
@@ -41,33 +41,77 @@ header .container p{
   grid-column: 1/2;
   grid-row: 3/4;
 }
-.link-github{
+header .link-github{
   font-size: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.link-github svg{
+header .link-github svg{
   width: 1.5rem;
   height: 1.5rem;
 }
-
-
-h1{
+header h1{
   margin-top: 0.6rem;
   margin-bottom: 0.7rem;
 }
-
-h2{
+header h2{
   margin-top: 0.3rem;
   margin-bottom: 0.2rem;
 }
-
 header p{
   margin-top: 1rem;
   color: rgb(92, 92, 92);
 }
+
+nav ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+nav{
+  border-top: rgb(8, 59, 154) solid 2px;
+  border-bottom: rgb(8, 59, 154) solid 2px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#about{
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+blockquote{
+  background-color: #e9fbe9;
+  border-radius: 0.7rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-left: #82dd82 solid 10px;
+}
+.container h2{
+  padding-top: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
