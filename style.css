@@ -8,11 +8,7 @@
 *::after {
   box-sizing: border-box;
 }
-*{
-  max-width: 44rem;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 article{
   line-height: 1.7rem;
 }
@@ -20,7 +16,43 @@ article{
 body{
   font-family:Arial, Helvetica, sans-serif;
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+header .container{
+  display: grid;
+  max-width: 44rem;
+  width: 100%;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto;
+}
+.container h1{
+grid-column: 1/ -1;
+}
+header .container h2{
+  grid-column: 1//4;
+  grid-row: 2/3;
+}
+header .container p{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.link-github{
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-github svg{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 
 h1{
   margin-top: 0.6rem;
