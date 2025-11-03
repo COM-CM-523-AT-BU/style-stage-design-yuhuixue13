@@ -167,7 +167,7 @@ blockquote p{
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(6, auto);
   gap: 0.3rem;
-  border: /*#ace868*/ #6ed7a9 solid 5px;
+  border: #6ed7a9 solid 5px;
   padding: 1.5rem;
   padding-left: 3.5rem;;
 }
@@ -186,13 +186,13 @@ blockquote p{
   font-size: 1.2em;
 }
 
-/* 容器宽度与居中（不影响 body 结构） */
+
 aside {
   max-width: 53rem;
   margin-left: auto;
   margin-right: auto;
   padding-inline: 1rem;
-  width: 15rem;
+  width: 28rem;
 }
 
 aside.profile, aside#styles {
@@ -202,10 +202,8 @@ aside.profile, aside#styles {
   border: 1px solid #2a2a2a;
   border-radius: 5px;
   padding: 1.25rem 1.5rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,.35);
   color: #ffffff;
 }
-
 
 aside.profile, aside#styles { 
   margin-top: 1rem;
@@ -213,11 +211,6 @@ aside.profile, aside#styles {
   border-left: 6px solid transparent; 
   border-image: linear-gradient(180deg, #FF7733, #7EFFD6) 0 0 0 1; 
   padding-left: 1rem; 
-}
-
-
-aside#styles { 
-  margin-block: 0 1.25rem; 
 }
 
 aside.profile h4, aside#styles h2 {
@@ -235,19 +228,14 @@ aside li {
   margin-block: .25rem;
  }
 
- /* 并排：两个 aside */
-:is(aside.profile, aside#styles){
-  display: inline-block;
-  width: calc(50% - 1rem);   /* 留一点水平间隙 */
-  vertical-align: top;       /* 顶对齐，避免不同高度导致底部错位 */
-  margin-block: 1rem;        /* 保留你原来的上下间距 */
+aside.profile{
+  margin-inline-start: 6rem; 
+}
+aside#styles{ 
+  margin-inline-end: 1rem;
 }
 
-/* 左右各加一点内边距/外边距，视觉更松弛（可选） */
-aside.profile{  margin-inline-end: .5rem; }
-aside#styles{   margin-inline-start: .5rem; }
 
-/* 小屏回到纵向堆叠（可选） */
 @media (max-width: 900px){
   :is(aside.profile, aside#styles){
     display: block;
@@ -273,10 +261,12 @@ footer ul{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: start;
-  justify-content: center;
+  align-items: center;
+  justify-content: start;
   gap: 1rem;
   list-style: none;
+  padding: 1rem;
+  padding-right: 2rem;
 }
 
 
@@ -300,6 +290,16 @@ footer .page-footer p {
   color: #ccc;
   font-size: 0.9rem;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
