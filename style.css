@@ -88,7 +88,6 @@ header .link-github svg{
   height: 2rem;
 }
 .link-github svg path {
-  /*fill: #00E599;*/
   fill:#FFD91A;
 }
 
@@ -187,18 +186,120 @@ blockquote p{
   font-size: 1.2em;
 }
 
+/* 容器宽度与居中（不影响 body 结构） */
+aside {
+  max-width: 53rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: 1rem;
+  width: 15rem;
+}
+
+aside.profile, aside#styles {
+  display: block;
+  position: relative;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 5px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  color: #ffffff;
+}
 
 
+aside.profile, aside#styles { 
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  border-left: 6px solid transparent; 
+  border-image: linear-gradient(180deg, #FF7733, #7EFFD6) 0 0 0 1; 
+  padding-left: 1rem; 
+}
 
 
+aside#styles { 
+  margin-block: 0 1.25rem; 
+}
+
+aside.profile h4, aside#styles h2 {
+  margin: 0 0 .75rem;
+  font-size: 1.125rem;
+  letter-spacing: .02em;
+  color: #fff;
+}
+
+aside ul { 
+  margin: 1rem;
+  padding-left: 1.25rem;
+}
+aside li { 
+  margin-block: .25rem;
+ }
+
+ /* 并排：两个 aside */
+:is(aside.profile, aside#styles){
+  display: inline-block;
+  width: calc(50% - 1rem);   /* 留一点水平间隙 */
+  vertical-align: top;       /* 顶对齐，避免不同高度导致底部错位 */
+  margin-block: 1rem;        /* 保留你原来的上下间距 */
+}
+
+/* 左右各加一点内边距/外边距，视觉更松弛（可选） */
+aside.profile{  margin-inline-end: .5rem; }
+aside#styles{   margin-inline-start: .5rem; }
+
+/* 小屏回到纵向堆叠（可选） */
+@media (max-width: 900px){
+  :is(aside.profile, aside#styles){
+    display: block;
+    width: auto;
+    margin-inline: 0;
+  }
+}
 
 
+footer.page-footer .container {
+  display: grid;
+  grid-template-columns: auto auto auto auto; 
+  align-items:center;    
+  justify-content: space-around;          
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-top: 2px solid #333;
+  margin-top: 3cqi;
+}
 
 
+footer ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
 
 
+footer .link-github{
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+ footer .link-github svg{
+  width: 2rem;
+  height: 2rem;
+}
 
 
+footer .page-footer p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
 
 
 
@@ -213,9 +314,9 @@ h6 {
   margin: 0;
 }*/
 
-html {
+/*html {
   overflow-x: hidden;
-}
+}*/
 
 /* Set core body defaults */
 /*body {
@@ -227,7 +328,7 @@ html {
 }*/
 
 /* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
+/*@media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
@@ -236,4 +337,4 @@ html {
   }
 }
 
-// Begin theme styles
+// Begin theme styles*/
