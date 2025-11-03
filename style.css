@@ -61,8 +61,6 @@ header .container h1 {
   background-clip: text;
   animation: move-bg 5s linear infinite alternate;
 }
-
-/* 背景移动动画 */
 @keyframes move-bg {
   0%   { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
@@ -112,6 +110,7 @@ nav ul{
   flex-flow: row nowrap;
   justify-content: space-around;
 }
+
 nav{
   border-top: #6ed7a9 solid 3px;
   border-bottom: #6ed7a9 solid 3px;
@@ -123,8 +122,14 @@ a{
   color:rgb(70, 172, 255);
 }
 
-#about{
-  margin-top: 1.5rem;
+#main{
+  max-width: 53rem;
+   margin-left: auto;
+  margin-right: auto;
+}
+
+#main #about{
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
 blockquote{
@@ -145,14 +150,18 @@ blockquote p{
   background-color: #ff7220;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
   display: inline-block;
-  border-radius: 1.7rem;
+  border-radius: 2rem;
   font-size: 1.3rem;
   color: #ffffff;
   font-family: "Space Grotesk", sans-serif;
 }
+#main #about .container h2{
+
+}
+
 
 #about .container ul{
   display: grid;
@@ -164,13 +173,19 @@ blockquote p{
   padding-left: 3.5rem;;
 }
 
+#main .container h3{
+  color:#ff7220;
+}
 
+#main #contribute .container h2 {
+  margin-top: 2rem;
+}
 
-
-
-
-
-
+#main #contribute ol li::marker {
+  color: #6ed7a9;  
+  font-weight: 900; 
+  font-size: 1.2em;
+}
 
 
 
