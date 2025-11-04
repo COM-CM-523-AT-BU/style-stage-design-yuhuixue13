@@ -7,6 +7,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+/* Remove default margin */
+/*body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}*/
+
+/*html {
+  overflow-x: hidden;
+}*/
+
+/* Set core body defaults */
+/*body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}*/
+
+/* Remove all animations and transitions for people that prefer not to see them */
+/*@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Begin theme styles*/
 
 *,
 *::before,
@@ -53,7 +88,7 @@ background-position: 100% 100%;
 
 header .container h1 {
   grid-column: 1/ -1;
-  font-size: 5rem;                
+  font-size: 8rem;                
   background: radial-gradient(circle, #FF7733, #7EFFD6);
   background-size: 300% 300%;
   background-position: 0% 50%;
@@ -71,6 +106,7 @@ header .container h2{
   grid-column: 1/4;
   grid-row: 2/3;
   padding-top: 0.8rem;
+  font-size: 2.7rem;
 }
 header .container p{
   grid-column: 1/2;
@@ -117,6 +153,13 @@ nav{
   margin-bottom: 1rem;
 }
 
+nav ul li{
+  padding: 1rem;
+  border-radius: 5rem;
+  /*border:#FF7733 solid 1px;*/
+  list-style: none;
+}
+
 a{
   color:rgb(70, 172, 255);
 }
@@ -156,9 +199,6 @@ blockquote p{
   font-size: 1.3rem;
   color: #ffffff;
   font-family: "Space Grotesk", sans-serif;
-}
-#main #about .container h2{
-
 }
 
 
@@ -235,14 +275,7 @@ aside#styles{
   margin-inline-end: 1rem;
 }
 
-/* 小屏回到纵向堆叠（可选） */
-@media (max-width: 900px){
-  :is(aside.profile, aside#styles){
-    display: block;
-    width: auto;
-    margin-inline: 0;
-  }
-}
+
 
 
 footer.page-footer .container {
@@ -302,38 +335,3 @@ footer .page-footer p {
 
 
 
-/* Remove default margin */
-/*body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}*/
-
-/*html {
-  overflow-x: hidden;
-}*/
-
-/* Set core body defaults */
-/*body {
-  min-height: 100vh;
-  font-size: 100%;
-  line-height: 1.5;
-  text-rendering: optimizeSpeed;
-  overflow-x: hidden;
-}*/
-
-/* Remove all animations and transitions for people that prefer not to see them */
-/*@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-// Begin theme styles*/
