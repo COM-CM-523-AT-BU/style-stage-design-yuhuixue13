@@ -235,7 +235,7 @@ aside#styles{
   margin-inline-end: 1rem;
 }
 
-
+/* 小屏回到纵向堆叠（可选） */
 @media (max-width: 900px){
   :is(aside.profile, aside#styles){
     display: block;
@@ -290,7 +290,6 @@ footer .page-footer p {
   color: #ccc;
   font-size: 0.9rem;
 }
-
 
 
 
